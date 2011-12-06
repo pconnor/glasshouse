@@ -1,0 +1,25 @@
+!!!
+%html
+  %head
+    %title Glasshouseproject
+    = stylesheet_link_tag    "mobile", "jqtouch.css"
+    = javascript_include_tag "jquery-1.4.2.min.js", "jqtouch.js", "mobile.js"
+    = csrf_meta_tags
+  %body
+    - if mobile_device?
+      = link_to "Full Site", :mobile => 0
+    - else
+      = link_to "Mobile Site", :mobile => 1
+    .current
+      - if show_title?
+        .toolbar
+          = link_to "Back", nil, :class => "back" unless current_page? root_path
+          %h1
+            = yield(:title)
+          = link_to "Full Site", root_url(:mobile => 0), :class => "button", :rel => "external"
+          = yield(:toolbar)
+      = unless flash.empty?
+        .info
+          - flash.each do |name, msg|
+            = content_tag :div, msg, :id => "flash#{name}"
+      = yield

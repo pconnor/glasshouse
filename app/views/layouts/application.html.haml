@@ -1,0 +1,17 @@
+!!!
+%html
+  %head
+    %title Glasshouseproject
+    = stylesheet_link_tag    "application"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+  %body
+    #nav_01
+      #nav_wrap
+        = link_to_unless_current image_tag("logo.gif", :id => "logo"), root_path
+        %ul.float_right
+          %li
+            = link_to_unless_current "about", "/about"
+          %li
+            = link_to_unless_current "contact", "/current"
+    = yield
