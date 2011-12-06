@@ -1,6 +1,7 @@
 body {
-  background-image:url('body_background.jpg');
-  //background: url('body_background.jpg'), gray, repeat;
+  //background-image:url('body_background.jpg');
+  //background: url('body_background.jpg') gray repeat;
+  background: gray;
   color: #808284;
   font-family: century gothic, verdana, arial, helvetica, sans-serif;
   padding: 0;
