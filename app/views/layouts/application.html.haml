@@ -16,7 +16,8 @@
             %li
               = link_to_unless_current "contact", "/current"
       = yield
+      .pad_10
       .push
     #nav_02.center
       = "Copyright &copy; 2012 | ".html_safe
-      = link_to "Mobile Site", root_url(:mobile => 1)
+      = link_to "Go To Mobile Site", root_url(:mobile => 1)

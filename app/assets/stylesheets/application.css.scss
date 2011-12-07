@@ -127,6 +127,15 @@ a:hover {
   color: #9DD8D5;  
 }
 
+//********************************Learn More Sprites******************************
+.learn_more {
+  margin: 10px auto;
+  width: 293px;
+  text-align: center;
+  }
+
+//*******************************Custom Classes***********************************
+
 .clear {
   clear: both;
 }
@@ -137,4 +146,8 @@ a:hover {
 
 .float_right {
   float: right;
+}
+
+.pad_10 {
+  margin: 10px;
 }
