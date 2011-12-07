@@ -112,7 +112,7 @@ h1 {
 p {
   color: #404041;
   font-size: 85%;
-  padding: 5px;
+  padding: 7px;
   margin: 0;
   
 }
@@ -129,7 +129,7 @@ a:hover {
 
 //********************************Learn More Sprites******************************
 .learn_more {
-  margin: 10px auto;
+  margin: 10px auto 5px auto;
   width: 293px;
   text-align: center;
   }
@@ -150,4 +150,8 @@ a:hover {
 
 .pad_10 {
   margin: 10px;
+}
+
+.white {
+  color: white;
 }
