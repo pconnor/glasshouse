@@ -2,14 +2,10 @@
 %html
   %head
     %title Glasshouseproject
-    = stylesheet_link_tag    "mobile", "jqtouch.css"
-    = javascript_include_tag "jqtouch.js", "mobile.js"
+    = stylesheet_link_tag    "jqtouch.css", "mobile.css"
+    = javascript_include_tag "jquery-1.4.2.min.js", "jqtouch.js", "mobile.js"
     = csrf_meta_tags
   %body
-    - if mobile_device?
-      = link_to "Full Site", :mobile => 0
-    - else
-      = link_to "Mobile Site", :mobile => 1
     .current
       - if show_title?
         .toolbar

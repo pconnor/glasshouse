@@ -1,6 +1,9 @@
-- title "Mobile Home"
+- title "Glass House Travel"
+%ul
+  %li.center
+    = image_tag("logo1.gif", :id => "logo")
 %ul.metal
-  %li About Us
-  %li Contact
-  %li Contact
-  %li Form
+  %li 
+    = link_to_unless_current "about","/about"
+  %li
+    = link_to_unless_current "contact","/contact"
