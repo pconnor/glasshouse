@@ -6,12 +6,17 @@
     = javascript_include_tag "application.js"
     = csrf_meta_tags
   %body
-    #nav_01
-      #nav_wrap
-        = link_to_unless_current image_tag("logo1.gif", :id => "logo"), root_path
-        %ul.float_right
-          %li
-            = link_to_unless_current "about", "/about"
-          %li
-            = link_to_unless_current "contact", "/current"
-    = yield
+    #master_wrap
+      #nav_01
+        #nav_wrap
+          = link_to_unless_current image_tag("logo1.gif", :id => "logo"), root_path
+          %ul.float_right
+            %li
+              = link_to_unless_current "about", "/about"
+            %li
+              = link_to_unless_current "contact", "/current"
+      = yield
+      .push
+    #nav_02.center
+      = "Copyright &copy; 2012 | ".html_safe
+      = link_to "Mobile Site", root_url(:mobile => 1)

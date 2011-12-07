@@ -737,3 +737,7 @@ input[type='submit'] {
     font-weight: inherit;
     padding: 10px;
 }
+
+.center {
+  text-align: center;
+}

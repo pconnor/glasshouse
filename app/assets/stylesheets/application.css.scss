@@ -1,3 +1,10 @@
+* {
+	margin: 0;
+}
+html, body {
+	height: 100%;
+}
+
 body {
   //background-image:url('body_background.jpg');
   //background: url('body_background.jpg') gray repeat;
@@ -7,6 +14,14 @@ body {
   padding: 0;
   margin: 0;
   }
+  
+#master_wrap {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -20px; /* the bottom margin is the negative value of the footer's height */
+}
+
     
 #wrapper {
   margin: 0 auto;
@@ -26,6 +41,7 @@ body {
   ul {
    list-style: none outside none;
    display: inline; 
+   line-height: 55px;
   }
   li {
     display: inline;
@@ -36,6 +52,20 @@ body {
   }
 }
 
+#nav_02{
+  margin: 0;
+  padding: 0;
+  height: 20px;
+  background: white; 
+  }
+
+#nav_02, .push {
+  margin: 0;
+  padding: 0;
+  height: 20px;
+  font-size: 85%;
+  }
+  
 #splash_banner {
   width: 900px;
   height: 250px;
@@ -45,18 +75,21 @@ body {
 
 .splash_col_1 {
   width: 293px;
+  height: 250px;
   margin: 10px 11px 0 0;
   float: left;
   background-color: white;
 }
 .splash_col_2 {
   width: 292px;
+  height: 250px;
   margin: 10px 0 0 0;
   float: left;
   background-color: white;
 }
 .splash_col_3 {
   width: 293px;
+  height: 250px;
   margin: 10px 0 0 11px;
   float: left;
   background-color: white;

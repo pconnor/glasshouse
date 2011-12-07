@@ -10,8 +10,6 @@
       - if show_title?
         .toolbar
           = link_to "Back", nil, :class => "back" unless current_page? root_path
-          %h1
-            = yield(:title)
           = link_to "Full Site", root_url(:mobile => 0), :class => "button", :rel => "external"
           = yield(:toolbar)
       = unless flash.empty?

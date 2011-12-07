@@ -1,8 +1,15 @@
 - title "Glass House Travel"
-%ul
+%ul.form
   %li.center
-    = image_tag("logo1.gif", :id => "logo")
-%ul.metal
+    = image_tag("logo_mobile.gif", :id => "logo")
+  %li 
+    = link_to_unless_current "Performance Groups","/performance"
+  %li 
+    = link_to_unless_current "Education Groups","/education"
+  %li 
+    = link_to_unless_current "Community Groups","/community"
+    
+%ul.form
   %li 
     = link_to_unless_current "about","/about"
   %li
