@@ -9,6 +9,8 @@ gem 'thin'
 gem 'haml'
 gem 'pg'
 gem 'jquery-rails'
+gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
+gem 'cancan'
 
 group :development do
   gem 'heroku_san'
@@ -40,3 +42,5 @@ group :test do
   # Pretty printed test output
   gem 'turn', :require => false
 end
+
+gem "devise"

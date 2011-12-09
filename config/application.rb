@@ -45,5 +45,6 @@ module Glasshouseproject
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
     config.assets.precompile += ['mobile.css', 'mobile.js', 'jqtouch.css', 'jqtouch.js', 'jquery-1.4.2.min.js']
+    config.assets.initialize_on_precompile = false
   end
 end

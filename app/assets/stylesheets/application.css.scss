@@ -9,7 +9,7 @@ body {
   //background-image:url('body_background.jpg');
   //background: url('body_background.jpg') gray repeat;
   background-color: #808284;
-  color: #808284;
+  color: white;
   font-family: century gothic, verdana, arial, helvetica, sans-serif;
   padding: 0;
   margin: 0;
@@ -24,15 +24,37 @@ body {
 
     
 #wrapper {
+  padding: 10px;
+  background-color: white ;
+  color: #808284;
+  margin: 10px auto 0 auto;
+  width: 900px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  -moz-box-shadow: 2px 2px 2px 	#707070 ;
+  -webkit-box-shadow: 2px 2px 2px 	#707070 ;
+  box-shadow: 2px 2px 2px 	#707070 ;  
+  }
+  
+#splash_wrapper {
+  //background-color: white ;
+  //color: #808284;
   margin: 0 auto;
   width: 900px;
   }
+
+#splash {
+  background-color: #808284 ;
+  color: white;
+  
+}
 
 #nav_01 {
   margin: 0;
   padding: 0;
   height: 55px;
   background: white; 
+  border-bottom: 2px solid #808284;
   #nav_wrap {
     margin: 0 auto;
     padding: 0;
@@ -57,6 +79,7 @@ body {
   padding: 0;
   height: 20px;
   background: white; 
+  color: #808284 ;
   }
 
 #nav_02, .push {
@@ -104,6 +127,7 @@ body {
   }
   
 h1 {
+  color: #808284;
   margin: 0;
   padding: 2px;
   font-size: 125%;
@@ -120,7 +144,7 @@ p {
 a {
   color: #808284;
   font-weight: bold;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 a:hover {
@@ -134,7 +158,39 @@ a:hover {
   text-align: center;
   }
 
+//*******************************Notice and Alert***********************************
+
+.notice {
+  color: green;
+  border: 2px solid green;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.alert {
+  color: red;
+  border: 2px solid red;
+  padding: 10px;
+  font-weight: bold;
+}
+
+
+
 //*******************************Custom Classes***********************************
+.block {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: white;
+  color: #808284;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  -moz-box-shadow: 2px 2px 2px 	#707070 ;
+  -webkit-box-shadow: 2px 2px 2px 	#707070 ;
+  box-shadow: 2px 2px 2px 	#707070 ;
+  h1 {
+    margin: 0 0 10px 0;
+  }
+}
 
 .clear {
   clear: both;

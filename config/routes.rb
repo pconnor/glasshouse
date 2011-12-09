@@ -1,7 +1,16 @@
 Glasshouseproject::Application.routes.draw do
 
   root :to => 'pages#home'
-  resources :pages
+  devise_for :users
+  resources :pages do
+    member do
+      get 'home', :action => :home
+    end
+  end
+
+
+
+  mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
   
   match ':permalink' => 'pages#show'
 

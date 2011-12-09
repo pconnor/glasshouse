@@ -1,7 +1,15 @@
 class PagesController < ApplicationController
+  #load_resource :except => :home
+  #authorize_resource :except => :home
+  #skip_authorization_check :only => :home
+  
   # GET /pages
   # GET /pages.json
   
+  def home
+    render :layout => 'splash'
+  end
+
   def index
     @pages = Page.all
 
